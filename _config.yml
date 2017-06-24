@@ -29,41 +29,43 @@ sidebar_categories:
     - integration/parsing
     - integration/learning
     - integration/interacting
-  Client:
+  User Interface:
     - client/elements
     - client/layouts
     - client/charts
     - client/controls
-  Applications:
-    - domains/investment
-    - domains/buildings
-    - domains/wine
-  # Storage: 
-  #   - storage/mongo
-  #   - storage/elastic
-  #   - storage/sql
-  # Analysis:
-  #   - analysis/nlp
-  #   - analysis/cleansing
-  #   - analysis/regression
-  #   - analysis/clustering
-  #   - analysis/recognition
-  #   - analysis/actions
+  # Applications:
+  #   - domains/investment
+  #   - domains/buildings
+  #   - domains/wine
+  Storage: 
+    - storage/mongo
+    - storage/elastic
+    - storage/influx
+    - storage/sql
+  Analysis:
+    - analysis/nlp
+    - analysis/cleansing
+    - analysis/aggregation
+    - analysis/regression
+    - analysis/clustering
+    - analysis/recognition
   # Actions:
+  #   - exec/actions
   #   - exec/control
   #   - exec/email
   #   - exec/notifications
   #   - exec/workflow
-  # Services:
-  #   - services/users
-  #   - services/licensing
-  #   - services/authorisation
-  #   - services/administration
-  #   - services/monitoring
-  #   - services/scheduling
-  #   - services/testing
-  #   - services/deployment
-  #   - services/documentation
+  Services:
+    - services/users
+    - services/licensing
+    - services/authorisation
+    - services/administration
+    - services/monitoring
+    - services/scheduling
+    - services/testing
+    - services/deployment
+    - services/documentation
 github_repo: 'ogecko/docs-api'
 content_root: 'source'
 
