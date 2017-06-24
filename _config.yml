@@ -86,7 +86,7 @@ nav_links:
     url: https://ogecko.github.io/docs-process/
     target: _new
   'Forums':
-    url: http://www.ogecko.com/forums
+    url: https://ogecko.github.io/docs-process/
     target: _new
 
 social_links:
@@ -153,11 +153,10 @@ api_box:
 marked:
   breaks: false
 
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/ogecko/docs-api
-  branch: gh-pages
-  message: Deployed using npm run deploy and hexo-deployer-git
+# Deployment - no need to use as using default repo/docs directory
+#deploy:
+#  type: git
+#  repo: https://github.com/ogecko/docs-api
+#  branch: gh-pages
+#  message: Deployed using npm run deploy and hexo-deployer-git
 

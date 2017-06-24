@@ -1,4 +1,3 @@
----
 title: Introducing Gehyra
 ---
 
@@ -19,19 +18,40 @@ Gehyra is a full-stack JavaScript, Python and GoLang platform for developing mod
 - Gehyra provides **full lifecycle** management to help protect and secure your investment in best practice technologies.
 
 
+<h2 id="what-is-ogecko">Who are oGecko Solutions?</h2>
+
+We are a technology company that monitors Open Source, integrates the best of the best, and creates solutions to humanistic collaborative endeavors. We are based in Sydney, Australia.
+
+Our overall vision is to apply collective intelligence in an ethical and open way to serve the public and private sectors; reducing waste, mistakes, corruption, crime and suffering; while helping improve health, security, education and well being. We aim to create solutions that are elegant, enjoyable and easy to use that help support you in achieving your goals. 
+
+
+We have a over 30 years of experience in the best practices of software engineering and applying them to challenging problems. We have developed solutions for the Industrial Automation Market, Building Controls Market, Security and Access Control Market, Entertainment Market, Desktop Market, and Education Market. 
+
+Some key areas of expertise include:
+
+- Big Data, Data Aggregation, Data Science
+- Machine Learning, Analytics and Intelligence
+- Cyber Security, Security Governance and Incident Response
+- High Availability, Scalability, Containerization, and Micro-services
+- Agile Practices, High Maturity Models, Continuous Integration, Test and Deployment
+- Graphic Design, Human Factors and User Experience 
+- Relational, No-SQL, and Graph based databases
+- NodeJS, AngularJS, ReactJS, ExpressJS
+
+If you have any enquiries for consultation, development or other services in your domain please feel free to contact us by email on: support@ogecko.com. 
+
+
 <h2 id="learning-more">Gehyra resources</h2>
 
-1. The place to get started with Gehyra is the [official tutorial](https://www.oGecko.com/tutorials/blaze/creating-an-app).
+1. The place to get started with Gehyra is the [Official Gehyra Tutorial](https://ogecko.github.io/docs-tutorial).
 
-2. Once you are familiar with the basics, the [oGecko Guide](http://guide.oGecko.com) covers intermediate material on how to use oGecko in a larger scale app.
+2. This site, the [Gehyra API](https://ogecko.github.io/docs-api) covers intermediate material on the architecture, design and how to use Gehyra in a larger scale app.
 
-3. [Stack Overflow](http://stackoverflow.com/questions/tagged/oGecko) is the best place to ask (and answer!) technical questions. Be sure to add the oGecko tag to your question.
+3. The [oGecko Knowledge Base](https://ogecko.github.io/docs-kb) has general technical information, including work instructions and open source technology decision matrices.
 
-4. Visit the [oGecko discussion forums](https://forums.oGecko.com) to announce projects, get help, talk about the community, or discuss changes to core.
+4. [Stack Overflow](http://stackoverflow.com/questions/tagged/oGecko) is the best place to ask (and answer!) technical questions. Be sure to add the oGecko tag to your question.
 
-5. [Atmosphere](https://atmospherejs.com) is the repository of community packages designed especially for oGecko.
-
-6. [Awesome oGecko](https://github.com/Urigo/awesome-oGecko) is a community-curated list of [packages](https://github.com/Urigo/awesome-oGecko#getting-started) and [resources](https://github.com/Urigo/awesome-oGecko#resources).
+5. Visit the [oGecko Discussion Forums](https://ogecko.github.io/docs-forum) to get help, talk about the community, or discuss changes to core.
 
 
 <!-- ABC: hidden comment for cache testing -->
