@@ -1,32 +1,41 @@
-## Meteor API Documentation - http://docs.meteor.com
+# Gehyra API Documentation - https://ogecko.github.io/docs-api
 
-This is a [hexo](https://hexo.io) static site used to generate the [Meteor API Docs](http://docs.meteor.com).
+This is a [hexo](https://hexo.io) static site used to generate the [Gehyra API Docs](https://ogecko.github.io/docs-api).
 
-## Contributing
 
-We'd love your contributions! Please send us Pull Requests or open issues on [github](https://github.com/meteor/docs). Also, read the [contribution guidelines](https://github.com/meteor/docs/blob/master/Contributing.md).
 
-If you are making a larger contribution, you may need to run the site locally:
+## Generating the documentation
+To generate the documentation use:
+```
+$ npm run gen
+```
+This will clean the Hexo database, generate JSDoc `data/data.js` from the code signatures, then generate the static html pages from the markup. The generated files are stored in the `docs` folder. This folder is setup in GitHub to be hosted at [https://ogecko.github.io/docs-api](https://ogecko.github.io/docs-api).
 
-### Running locally
+
+
+## Running locally
+To run a copy of the documentation locally use:
+```
+$ npm run start
+```
+Changes to the markdown files will be automatically reflected. Changes to code signatures will need restarting of the server.
+
+
 
 #### Submodules
 
-This repo has two submodules, one the theme, the other full Meteor repository.
-
-We have the Meteor repo to generate the `data.js` file (see below).
-
-After cloning, or updating the repo, it makes sense to run
+This repo links to the docs-theme-ogecko repository using submodules. To update to the latest theme use:
 
 ```
-git submodule update --init
+$ git submodule update --init
 ```
-
 Generally you should not commit changes to the submodules, unless you know what you are doing.
+
+
 
 #### Generating `data.js`
 
-To generate the api boxes, the site uses a file `data/data.js` which is generated from the js docs in the [Meteor source code](https://github.com/meteor/meteor). This will automatically happen whenever you start your local hexo server.
+To generate the api boxes, the site uses a file `data/data.js` which is generated from the js docs. This will automatically happen whenever you start your local hexo server.
 
 #### Starting hexo
 
