@@ -22,7 +22,7 @@ When fetching a `Request`.
 This module provides a managed approach to fetching HTML content from over the network, implementing the following three best practices
 1. Minimal Impact – Dont spam servers asking for the same content. Cache all requests.
 2. Minimal Latency - Wherever possible use a single HTTP request for the content.
-3. Dynamic Content - Cater for pages that generate content using Javascript. 
+3. Dynamic Content - Cater for pages that generate content using client-side Javascript. 
 
 When an URL is requested the module will check whether there is a copy of it stored in the MongoDB cache. When there is a copy in cache which is not stale then it will return this instead of going out over the network. 
 

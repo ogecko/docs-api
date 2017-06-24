@@ -32,7 +32,7 @@ Changes to the markdown files will be automatically reflected. Changes to code s
 This repo links to the `docs-theme-ogecko` repository using submodules. To update to the latest theme use:
 
 ```
-$ git submodule update --init
+$ git submodule update 
 ```
 Generally you should not commit changes to the submodules, unless you know what you are doing.
 

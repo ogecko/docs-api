@@ -1,7 +1,7 @@
 title: Introducing Gehyra
 ---
 
-<h2 id="what-is-Gehyra">What is Gehyra?</h2>
+<h2 id="what-is-gehyra">What is Gehyra?</h2>
 
 Gehyra is a full-stack JavaScript, Python and GoLang platform for developing modern mobile, web and IOT applications. Gehyra includes a key set of best practice open source technologies for building connected-client reactive applications in industrial, enterprise and comercial domains. The technology stack is an opinionated and curated set of packages from the Python, GoLang, Node.js and general JavaScript communities.
 
@@ -18,7 +18,7 @@ Gehyra is a full-stack JavaScript, Python and GoLang platform for developing mod
 - Gehyra provides **full lifecycle** management to help protect and secure your investment in best practice technologies.
 
 
-<h2 id="what-is-ogecko">Who are oGecko Solutions?</h2>
+<h2 id="who-are-ogecko">Who are oGecko Solutions?</h2>
 
 We are a technology company that monitors Open Source, integrates the best of the best, and creates solutions to humanistic collaborative endeavors. We are based in Sydney, Australia.
 

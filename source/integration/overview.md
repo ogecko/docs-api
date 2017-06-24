@@ -2,6 +2,10 @@ title: Overview
 description: High Level Domain Integration using Job Collections and Adapters
 ---
 
+The intent is to push integration requests to the highest level of understanding as possible. Each application domain will have their own topics of requeusts that need to be able to be handled by the set of specific adapters. Your application and the adapters are totally free to chose topics, requests and interactions to best get the job done.
+
+Most applications will at least need some form of searching, fetching and interacting with an integrated device or service. This overview describes how the work pipeline manages and processes these types of requests.
+
 <h2 id="pipeline">Searching, Fetching and Interacting</h2>
 
 Action dispatchers create a work job that is queued into a [Job Collection](https://github.com/vsivsi/meteor-job-collection). You can dispatch a `SearchJob` that will use all registered search services on a given topic to get a list of results to fetch. You can dispatch or schedule a `FetchJob` to retrieve some content then parse and store its information. You can dispatch an `InteractJob` to perform some task by interacting with a network service. 

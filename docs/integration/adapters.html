@@ -307,7 +307,21 @@
     </div>
 
     <div class="document-formatting">
-      <p>The requesting, fetching, parsing and storing of information is typically domain specific. An <code>Adapter</code> is used to define how to perform these activities for a given domain and URL template. When registering an <code>Adapter</code> the functions to perform these activities are defined.</p>
+      <p>Adapters can be written for a range of domain specific devices, protocols, databases, applications and network services. Each adapter will typically fall into a protocol family. The range of protocols is fully extensible but some common classes of Adapters include.</p>
+<ul>
+<li>HTML - Interacting and fetching information from Open Data Sources and Web Sites</li>
+<li>HTTP - Interfacing to RESTful APIs using Hypertext Transfer Protocol</li>
+<li>JSON-RPC - Network services supporting stateless, light-weight remote procedure calls</li>
+<li>BACnet - Building Automation and Control (BAC) network</li>
+<li>OPC - OLE for Process Control</li>
+<li>Modbus - a serial communication protocol developed by Modicon</li>
+<li>AMQP - Advanced Message Queuing Protocol</li>
+<li>ESB - Enterprise Service Bus</li>
+<li>SQL - Structured Query Language</li>
+<li>NoSQL - non relational stores including document, graph, key-value and column stores </li>
+</ul>
+<p>As many of these protocols are quite generic, it is possible to create an Adapter instance which maximises the integration for a specific domain. This lifts the level of integration above the technical protocol used to communicate. The intent is to extract as much understanding as possible from any exchange, given a specific shared domain knowledge.</p>
+<p>The requesting, fetching, parsing and storing of information is typically domain specific. An <code>Adapter</code> is used to define how to perform these activities for a given domain and URL template. When registering an <code>Adapter</code> the functions to perform these activities are defined.</p>
 <ul>
 <li>registerAdapter ::</li>
 </ul>
