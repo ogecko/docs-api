@@ -64,21 +64,21 @@ sidebar_categories:
   #   - services/testing
   #   - services/deployment
   #   - services/documentation
-github_repo: 'ogecko/docs-architecture'
+github_repo: 'ogecko/docs-api'
 content_root: 'source'
 
 # themeing
-favicon: 'images/oGecko-logo.png'
+favicon: '/docs-api/images/oGecko-logo.png'
 
 logo:
-  nav_mobile: 'images/oGecko-banner.png'
-  url: 'https://ogecko.github.io/docs-architecture/'
+  nav_mobile: '/docs-api/images/oGecko-banner.png'
+  url: 'https://ogecko.github.io/docs-api/'
   title: 'oGecko'
   subtitle: 'Technical  Documentation'
 
 nav_links:
   'Architecture':
-    url: https://ogecko.github.io/docs-architecture/
+    url: https://ogecko.github.io/docs-api/
     active: true
   'KnowledgeBase':
     url: https://ogecko.github.io/docs-kb/
@@ -90,14 +90,14 @@ nav_links:
     target: _new
 
 social_links:
-  github: 'https://github.com/ogecko/docs-architecture'
+  github: 'https://github.com/ogecko/docs-api'
   twitter: '@ogecko'
 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://ogecko.github.io/docs-architecture
-root: /docs-architecture/
+url: https://ogecko.github.io/docs-api
+root: /docs-api/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -157,7 +157,7 @@ marked:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ogecko/docs-architecture
+  repo: https://github.com/ogecko/docs-api
   branch: gh-pages
   message: Deployed using npm run deploy and hexo-deployer-git
 
