@@ -1,0 +1,3 @@
+[submodule "themes/ogecko"]
+	path = themes/ogecko
+	url = https://github.com/ogecko/docs-theme-ogecko.git
