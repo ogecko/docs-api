@@ -7,7 +7,7 @@ Gehyra is a full-stack JavaScript, Python and GoLang platform for developing mod
 
 - Gehyra has world class **Human Factors** to provide beautiful, responsive, human-friendly user interfaces with unbelievalbe theming.
 
-- Gehyra is made for **Integration**, bringing together devices, protocols, databases, network and web services into a consistent framework.
+- Gehyra is made for **Integration**, bringing together sensors, devices, protocols, databases, network and web services into a consistent framework.
 
 - Gehyra uses the latest **machine learning** libraries to abstract, correlate, organise and gain intelligent insights from the information collected.
 

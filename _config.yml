@@ -30,19 +30,21 @@ sidebar_categories:
     - integration/learning
     - integration/interacting
   User Interface:
-    - client/elements
+    - client/visualisation
     - client/layouts
-    - client/charts
     - client/controls
+    - client/elements
   # Applications:
   #   - domains/investment
   #   - domains/buildings
   #   - domains/wine
   Storage: 
-    - storage/mongo
-    - storage/elastic
-    - storage/influx
-    - storage/sql
+    - storage/overview
+    - storage/configuration
+    - storage/knowledge
+    - storage/realtime
+    - storage/operational
+    - storage/archival
   Analysis:
     - analysis/nlp
     - analysis/cleansing
@@ -63,6 +65,7 @@ sidebar_categories:
     - services/administration
     - services/monitoring
     - services/scheduling
+    - services/reporting
     - services/testing
     - services/deployment
     - services/documentation

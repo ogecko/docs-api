@@ -8,12 +8,9 @@ This module includes the following
 - Footer
 - Sidebar
 - Container
-- Dashboard
-- Form
-- Graphic
-- Map
 - Grid
 - List
-- Table
-- Cards
 - Feed
+- Table
+- Form
+- Cards
