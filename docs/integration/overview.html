@@ -346,6 +346,50 @@
       
         <li>
           
+            <div class="heading-toc">Actions</div>
+          
+          <ul class="list-toc">
+            
+              
+              <li class="item-toc ">
+                <a href="../actions/automate.html" class="sidebar-link ">
+                  <span>Automate</span>
+                </a>
+              </li>
+            
+              
+              <li class="item-toc ">
+                <a href="../actions/control.html" class="sidebar-link ">
+                  <span>Control</span>
+                </a>
+              </li>
+            
+              
+              <li class="item-toc ">
+                <a href="../actions/email.html" class="sidebar-link ">
+                  <span>Email</span>
+                </a>
+              </li>
+            
+              
+              <li class="item-toc ">
+                <a href="../actions/notify.html" class="sidebar-link ">
+                  <span>Notify</span>
+                </a>
+              </li>
+            
+              
+              <li class="item-toc ">
+                <a href="../actions/workflow.html" class="sidebar-link ">
+                  <span>Workflow</span>
+                </a>
+              </li>
+            
+          </ul>
+        </li>
+      
+        <li>
+          
             <div class="heading-toc">Services</div>
           
           <ul class="list-toc">
@@ -438,7 +482,7 @@
 
     <div class="document-formatting">
       <p>The intent is to push integration requests to the highest level of understanding as possible. Each application domain will have their own topics of requeusts that need to be able to be handled by the set of domain specific adapters. Your application and the adapters are totally free to chose topics, requests and interactions to best get the job done.</p>
-<p>Most applications will at least need some form of searching, fetching and interacting with an integrated device or service. This overview describes how the work pipeline manages and processes these types of requests.</p>
+<p>Some adapters are static and simply push events and metrics into Gehyra on a regular basis. Others are more dynamic and respond to the needs of the application in real time. Most applications will at least need some form of searching, fetching and interacting with an integrated device or service. This overview describes how the work pipeline manages and processes these types of requests.</p>
 <h2 id="pipeline">Searching, Fetching and Interacting</h2>
 
 <p>Action dispatchers create a work job that is queued into a <a href="https://github.com/vsivsi/meteor-job-collection" target="_blank" rel="external">Job Collection</a>. You can dispatch a <code>SearchJob</code> that will use all registered search services on a given topic to get a list of results to fetch. You can dispatch or schedule a <code>FetchJob</code> to retrieve some content then parse and store its information. You can dispatch an <code>InteractJob</code> to perform some task by interacting with a network service. </p>

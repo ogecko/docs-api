@@ -4,7 +4,7 @@ description: High Level Domain Integration using Job Collections and Adapters
 
 The intent is to push integration requests to the highest level of understanding as possible. Each application domain will have their own topics of requeusts that need to be able to be handled by the set of domain specific adapters. Your application and the adapters are totally free to chose topics, requests and interactions to best get the job done.
 
-Most applications will at least need some form of searching, fetching and interacting with an integrated device or service. This overview describes how the work pipeline manages and processes these types of requests.
+Some adapters are static and simply push events and metrics into Gehyra on a regular basis. Others are more dynamic and respond to the needs of the application in real time. Most applications will at least need some form of searching, fetching and interacting with an integrated device or service. This overview describes how the work pipeline manages and processes these types of requests.
 
 <h2 id="pipeline">Searching, Fetching and Interacting</h2>
 

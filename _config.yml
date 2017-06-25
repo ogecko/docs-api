@@ -50,12 +50,12 @@ sidebar_categories:
     - analysis/regression
     - analysis/clustering
     - analysis/recognition
-  # Actions:
-  #   - exec/actions
-  #   - exec/control
-  #   - exec/email
-  #   - exec/notifications
-  #   - exec/workflow
+  Actions:
+    - actions/automate
+    - actions/control
+    - actions/email
+    - actions/notify
+    - actions/workflow
   Services:
     - services/users
     - services/licensing
