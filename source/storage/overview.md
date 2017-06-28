@@ -5,7 +5,7 @@ description:
 Overall goal is to minimise and ideally eliminate configuration.
 
 Design Paradigms
-- Re-use and re-purposing of existing knowledge
+- Re-use and re-purposing of existing knowledge in other systems
 - Self-discovery, self-describing, import and learning
 - Convention over configuration
 - Semantic configuration with Domain specific languages
