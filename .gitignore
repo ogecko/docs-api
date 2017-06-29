@@ -5,3 +5,4 @@ Thumbs.db
 db.json
 *.log
 *.pem
+_multiconfig.yml

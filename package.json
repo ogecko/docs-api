@@ -30,6 +30,7 @@
   },
   "scripts": {
     "gen": "hexo clean && jsdoc/jsdoc.sh && hexo generate",
-    "start": "hexo clean && jsdoc/jsdoc.sh && hexo server"
+    "semantic": "cd themes/ogecko-semantic && npm run semantic",
+    "start": "hexo clean && jsdoc/jsdoc.sh && hexo server --config _config.yml,_config.local.yml"
   }
 }
