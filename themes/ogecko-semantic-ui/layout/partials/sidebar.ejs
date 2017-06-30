@@ -1,0 +1,57 @@
+<div class="ui  rail">
+<div class="ui vertical blue menu">
+  <div class="item">
+    <div class="header">
+        <span><%- theme.logo.title %> <%- theme.logo.subtitle %></span>
+    </div>
+    <div class="menu">
+      <% _.each(config.nav_links || theme.nav_links, function (link, title) { %>
+        <a class="item <%- link.active && 'active' %>" href="<%- link.url || link %>"
+            <span><%- title %></span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+
+<!--   <div class="sidebar-content">
+    <div class="topcap">
+      <span class="title-sidebar"><%- config.title %></span>
+      <% if (config.versions.length > 1) { %>
+        <span class="select version-sidebar nochrome">
+          <select class="version-select">
+            <% config.versions.forEach(function (v) { %>
+              <option value="v<%- v %>"><%- v %></option>
+            <% }) %>
+          </select>
+        </span>
+      <% } %>
+    </div>
+
+    <% if (config.apis && config.apis.docsearch) { %>
+    <div class="wrapper-search">
+      <div class="input-symbol small round">
+        <input type="text" placeholder="Search <%- config.subtitle %>" id="desktop-search-input" />
+        <span class="icon-search"></span>
+      </div>
+      <div class="wrapper-desktop-search-results"></div>
+    </div>
+
+    <% } %>
+ -->
+  <% _.each(config.sidebar_categories, function(pages, category) { %>
+    <div class="item">
+      <% if (category !== 'null') { %>
+        <div class="header"><span><%- category %></span></div>
+      <% } %>
+      <div class="menu">
+        <% pages.forEach(function(path) { %>
+          <% p = site.pages.findOne({path: path + '.html'}) || { title: 'INVALID', path: '.' }; %>
+            <a class="item <%- page.title === p.title ? 'active' : '' %>" href="<%- relative_url(page.path, p.path) %>">
+              <span><%- p.title %></span>
+            </a>
+        <% }); %>
+      </div>
+    </div>
+  <% }); %>
+</div>
+</div>

@@ -1,0 +1,109 @@
+<% var githubUrl = 'https://github.com/' + config.github_repo +
+    '/tree/master/' + (config.content_root || 'content') + '/' +
+    page.path.replace(/\.html$/, '.md'); %>
+
+<div class="ui top fixed pointing blue menu">
+    <a class="item js-sidebar-toggle">
+      <i class="sidebar icon"></i>
+    </a>
+    <a class="header item">
+      <img class="ui tiny image" src="<%- config.logo && config.logo.mobile || theme.logo.nav_mobile %>" alt="<%- theme.logo.title %>" />
+      <span> &nbsp; <%- theme.logo && theme.logo.subtitle %></span>
+    </a>
+
+    <div class="right menu">
+      <% _.each(config.nav_links || theme.nav_links, function (link, title) { %>
+        <a class="item <%- link.active && 'active' %>" href="<%- link.url || link %>" <%- link.target && 'target=' + link.target %> >
+          <span><%- title %></>
+        </a>
+      <% }) %>
+    </div>
+ </div>
+
+<div class="ui segment">
+    <%- partial('partials/sidebar') %>
+
+  <div class="">
+  <div class="ui main text container content">
+    <div class="content-wrapper">
+      <div class="header-wrapper">
+        <a class="ui right floated mini button" href="<%- githubUrl %>" target="_blank">
+          <i class="ui github icon"></i><span>Edit on GitHub</span>
+        </a>
+        <h1 class="ui block header">
+          <div class="content">
+            <%- page.title %>
+            <% if (page.description) { %>
+              <div class="ui sub header"><%- page.description %></div>
+            <% } %>
+          </div>
+        </h1>
+      </div>
+
+      <div class="document-formatting">
+        <%- page.content %>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <div class="content-wrapper">
+        <%
+          function findAdjacent (direction) {
+            var pagePaths = _.flatten(_.map(config.sidebar_categories, function(vals) { return vals; }));
+            var pages = _.map(pagePaths, function (val) { return site.pages.findOne({path: val + '.html'}) || { title: 'INVALID', path: '.' }; });
+            var i = pages.length
+            while (i--) {
+              if (pages[i].title === page.title) {
+                break
+              }
+            }
+            return direction > 0
+              ? pages[i + 1]
+              : pages[i - 1]
+          }
+        %>
+        <% var prev = findAdjacent(-1); if (prev) { %>
+          <a class="link primary prev"
+            href="<%- relative_url(page.path, prev.path) %>">
+            <span class="icon-arrow-left-alt"></span>
+            <span class="subtitle-pagination">Previous</span>
+            <%- prev.title %>
+          </a>
+        <% } %>
+        <% var next = findAdjacent(1); if (next) { %>
+          <a class="link primary next"
+            href="<%- relative_url(page.path, next.path) %>">
+            <span class="subtitle-pagination">Next</span>
+            <%- next.title %>
+            <span class="icon-arrow-right-alt"></span>
+          </a>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="github">
+      <a class="link tertiary " href="<%- githubUrl %>" target="_blank">
+        <span class="icon-github"></span>Edit on GitHub</a>
+    </div>
+
+    <% if (page.discourseTopicId) { %>
+      <div class="discourse-comments-wrapper content-wrapper">
+        <div id='discourse-comments'></div>
+      </div>
+
+      <script type="text/javascript">
+        DiscourseEmbed = { discourseUrl: 'https://forums.meteor.com/',
+                           topicId: <%- page.discourseTopicId %> };
+
+        (function() {
+          var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+          d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+        })();
+      </script>
+    <% } %>
+  </div>
+ 
+</div>
+ 
+</div>

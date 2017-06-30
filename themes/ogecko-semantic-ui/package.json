@@ -1,0 +1,18 @@
+{
+  "name": "ogecko",
+  "version": "1.0.0",
+  "description": "A pure, simple and responsive Hexo theme for documenting technical information eg architecture, design, api, and process. Inspired by the [Meteor Guide](https://guide.meteor.com/) and [API Docs](http://docs.meteor.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "semantic-ui": "^2.2.10"
+  },
+  "scripts": {
+    "semantic": "cd semantic && rm -rf dist && gulp build && cp dist/*.min.* ../source/style && cp -r dist/themes/default ../source/style/themes/default"
+  }
+
+}
