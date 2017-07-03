@@ -6,6 +6,8 @@
   var activeLink = document.querySelector('.sidebar-link.current')
   var allLinks = []
 
+  $('.ui.sticky').sticky({context: '.main.container', offset: 57.5 })
+
   // create sub links for h2s
   var h2s = document.querySelectorAll('h2')
 

@@ -8,9 +8,12 @@ Design Paradigms
 - Re-use and re-purposing of existing knowledge in other systems
 - Self-discovery, self-describing, import and learning
 - Convention over configuration
-- Semantic configuration with Domain specific languages
+- Semantic configuration with Domain specific languages, semantic features, words intension based on a number of distinct and minimal components of meaning. Man is [+HUMAN] [+MALE] [+ADULT], Female is [+HUMAN] [-MALE] [+ADULT]
 - Failure proof
 - Progressive truthfulness. Perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation, or to the real properties of a real-world object
+- Dont hard code anything, get all values from some context
+- Loosely coupled components (layered one way) and compose them
+
 
 Multi-Layer Architecture - Users Layers of Knowledge
 - App user - no technical knowledge
