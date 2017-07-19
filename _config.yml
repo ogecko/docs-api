@@ -152,7 +152,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: ogecko-semantic-ui
+theme: ogecko
+##theme: ogecko-semantic-ui
 api_box:
   data_file: 'data/data.js'
 marked:
