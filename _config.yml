@@ -22,14 +22,14 @@ versions:
 sidebar_categories:
   null:
     - index
-  Integration:
+  IO - Integration:
     - integration/overview
     - integration/adapters
     - integration/fetching
     - integration/parsing
     - integration/learning
     - integration/interacting
-  User Interface:
+  UI - Clients:
     - client/visualisation
     - client/layouts
     - client/controls
@@ -38,27 +38,27 @@ sidebar_categories:
   #   - domains/investment
   #   - domains/buildings
   #   - domains/wine
-  Storage: 
+  DB - Storage: 
     - storage/overview
     - storage/configuration
     - storage/knowledge
     - storage/realtime
     - storage/operational
     - storage/archival
-  Analysis:
+  AN - Analysis:
     - analysis/nlp
     - analysis/cleansing
     - analysis/aggregation
     - analysis/regression
     - analysis/clustering
     - analysis/recognition
-  Actions:
+  AC - Actions:
     - actions/automate
     - actions/control
     - actions/email
     - actions/notify
     - actions/workflow
-  Services:
+  SV - Services:
     - services/users
     - services/licensing
     - services/authorisation
