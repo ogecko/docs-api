@@ -28,7 +28,11 @@ When an URL is requested the module will check whether there is a copy of it sto
 
 {% apibox fetchUrl.readFromCache %}
 
+Read the URL using direct HTTP network requests.
+
 readFromNetwork
+
+Read the URL using a browser to callup the page and allow javascript to fully render any dynamic content.
 
 readFromBrowser
 
